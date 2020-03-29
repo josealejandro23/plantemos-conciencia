@@ -1,0 +1,40 @@
+body{
+    background-color: chartreuse;
+}
+
+.barra{
+    padding: 1.5rem;
+}
+
+@media (max-width:767px){
+    .barra{
+        padding: 0.8rem;
+    }
+}
+
+.barra-navegacion{
+    flex-direction: row-reverse;
+}
+
+@media (min-width:768px){
+    .contenedor-inicio{
+        height: 100vh;
+        max-height: 100vh;
+        background-image: url('../images/cabecera.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.contenedor-derecho-inicio{
+    padding-top: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/info-transp-2.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+    height: 90vh;
+    max-height: 100vh;
+}
+
