@@ -54,3 +54,24 @@
     border: 1px solid gray;
     padding: 1rem;
 }
+
+.card{
+    border: 2px solid chartreuse;
+}
+
+.card-body{
+    background-color: rgb(101, 187, 14);
+    color: white;
+}
+
+.card-par{
+    background-color: rgb(44, 46, 42);
+    color: white;
+}
+
+.foto-conocenos{
+    height: 300px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
