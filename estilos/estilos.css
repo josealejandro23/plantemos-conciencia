@@ -44,7 +44,7 @@
     max-height: 100vh;
 }
 
-.contenedor-carrusel,.contenedor-facebook{   /* permite central verticalmente el carrusel */
+.contenedor-carrusel, .contenedor-facebook{   /* permite central verticalmente el carrusel y plugin de facebook */
     display: flex;
     align-items: center;
     justify-content: center;
