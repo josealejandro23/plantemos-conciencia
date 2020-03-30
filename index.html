@@ -17,15 +17,10 @@
     <!-- Se debe incluir data-scroll antes de cada href en el navbar o enlace y asociar destino 
     href como #id, donde id es el id q asignemos a una sección como id:'nosotros' -->
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-          // Function. Custom easing pattern
-          // If this is set to anything other than null, will override the easing option above
-          customEasing: function (time) {
-            // return <your formulate with time as a multiplier>
-            // Example: easeInOut Quad
-            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
-          }
-        });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true
+    });
     </script>
     <!-- Fin script deslizante -->
 
@@ -33,8 +28,10 @@
 
   </head>
   <body>
-    <!-- Inicio Barra datos -->
-    <div class="container barra" style="height: 4.5rem;">
+    <div class="section sticky-top">
+      <!-- Inicio Barra datos -->
+    <div class="section" style="background-color: rgb(122, 230, 14);">
+      <div class="container barra" style="height: 4rem;">
         <div class="row">
             <div class="col-md-auto text-md-left text-center barra-mail">
                 <img src="icons/mail.svg" width="25" height="25" alt="">
@@ -46,42 +43,44 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- Fin Barra datos -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <img src="images/logo.jpg" width="30" height="30" class="d-inline align-top ml-md-5 mr-md-2" alt="">
-        <a class="navbar-brand text-left" href="#">Plantemos conciencia</a>            
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse barra-navegacion mr-5" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link mr-md-1 mr-lg-4" data-scroll href="#inicio">Inicio<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mr-md-1 mr-lg-4" data-scroll href="#el-proyecto">El proyecto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mr-md-1 mr-lg-4" data-scroll href="#quienes-somos">Quienes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mr-md-1 mr-lg-4" data-scroll href="#conocenos">Conócenos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mr-md-1 mr-lg-4" data-scroll href="#contacto">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mr-md-1 mr-lg-4" data-scroll href="#">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-md navbar-light color-navbar" id="navegacion">
+      <img src="images/logo.jpg" width="30" height="30" class="d-inline align-top ml-md-5 mr-md-2" alt="">
+      <a class="navbar-brand text-left text-white" href="#">Plantemos conciencia</a>            
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse barra-navegacion mr-5" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#inicio">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#el-proyecto">El proyecto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#quienes-somos">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#conocenos">Conócenos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- fin navbar -->
+    </div>
 
     <!--Sección Inicio -->
-    <section  class="contenedor-inicio">
+    <section  class="contenedor-inicio mb-5" id="inicio">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -96,10 +95,86 @@
     </section>
     <!-- Fin inicio -->
 
+    <!-- Inicio el-proyecto -->
+    <section class="contenedor-proyecto" id="el-proyecto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="titulo text-center mb-2">El proyecto</h1>
+            <span class="lead">Buscamos minimizar el impacto ambiental generado por los residuos sólidos en el área
+               del municipio de El Tambo, para ello realizamos jornadas de capacitación con los
+                habitantes del sector, también realizamos jornadas de recolección de residuos
+                aprovechables, posteriormente los clasificamos según su material y categoría, 
+                para finalmente venderlos y reinvertir las ganancias en insumos para continuar. <br> <br></span>
+            <span>Buscamos dar una segunda vida a los residuos de viviendas y pequeñas empresas de
+                la zona de La independencia y Loma de astudillos en el municipio de El Tambo, Cauca. <br> <br>
+               Nos dedicamos a la recolección y clasificación de los diferentes tipos de residuos
+               aprovechables que se originan en las viviendas y negocios locales de nuestra zona.
+               Estos residuos son clasificados y almacenados en nuestra bodega, donde después
+               son llevados hasta la ciudad de Popayán para su venta. Los recursos obtenidos
+               son invertidos nuevamente en equipo e insumos necesarios para continuar con
+               esta bella labor.</span>
+          </div>
+          <div class="col-md-6 contenedor-carrusel">
+            <div id="carrusel" class="carousel slide cuerpo-carrusel" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                <li data-target="#carrusel" data-slide-to="1"></li>
+                <li data-target="#carrusel" data-slide-to="2"></li>
+                <li data-target="#carrusel" data-slide-to="3"></li>
+                <li data-target="#carrusel" data-slide-to="4"></li>
+                <li data-target="#carrusel" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/img-7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/img-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/img-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/img-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/img-5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/img-6.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin el-proyecto -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="scripts/bootstrap.js"></script>
+
+    <script>
+      $(window).scroll(function() {
+        if ($('#navegacion').offset().top > 66) {
+            $('#navegacion').addClass('color-2-navbar');
+        } else {
+            $('#navegacion').removeClass('color-2-navbar');
+        }
+      });
+    </script>
+
   </body>
 </html>

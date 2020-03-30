@@ -1,22 +1,28 @@
-body{
-    background-color: chartreuse;
+.barra{  /* Agrega margen a los elementos de correo y teléfono */
+    padding: 1rem;
 }
 
-.barra{
-    padding: 1.5rem;
-}
-
-@media (max-width:767px){
-    .barra{
+@media (max-width:767px){ /* cambia el margen para pantallas pequeñas de los elementos correo y teléfono */
+    .barra{  
         padding: 0.8rem;
     }
 }
 
-.barra-navegacion{
+.color-navbar{  /* establece el color inicial del navbar */
+    background-color: rgb(101, 187, 14);
+    transition: all 1s ease;
+}
+
+.color-2-navbar{ /* establece el color secundario del navbar para cuando se hace scroll */
+    background-color: rgb(44, 46, 42);
+    
+}
+
+.barra-navegacion{ /* ubica los links del navbar a la derecha de la pantalla */
     flex-direction: row-reverse;
 }
 
-@media (min-width:768px){
+@media (min-width:768px){   /* ubica la imagen de cabecera para pantallas medianas a grandes */
     .contenedor-inicio{
         height: 100vh;
         max-height: 100vh;
@@ -26,7 +32,7 @@ body{
     }
 }
 
-.contenedor-derecho-inicio{
+.contenedor-derecho-inicio{  /* aplica estilos a la imagen del lado derecho de la pantalla inicial */
     padding-top: 100vh;
     display: flex;
     align-items: center;
@@ -36,5 +42,15 @@ body{
     background-position: center;
     height: 90vh;
     max-height: 100vh;
+}
+
+.contenedor-carrusel{   /* permite central verticalmente el carrusel */
+    display: flex;
+    align-items: center;
+}
+
+.cuerpo-carrusel{  /* otorga un borde al cuerpo del carrusel */
+    border: 1px solid gray;
+    padding: 1rem;
 }
 
