@@ -12,16 +12,26 @@
 
     <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
 
+    <script src="scripts/smooth-scroll.js"></script>
+
     <!-- Efecto de scroll -->
     <!-- Script para habilitar el efecto de scroll -->
     <!-- Se debe incluir data-scroll antes de cada href en el navbar o enlace y asociar destino 
     href como #id, donde id es el id q asignemos a una sección como id:'nosotros' -->
     <script>
       var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
-      speedAsDuration: true
-    });
-    </script>
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+        customEasing: function (time) {
+
+          // return <your formulate with time as a multiplier>
+
+          // Example: easeInOut Quad
+          return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+        }
+      });
+  </script>
     <!-- Fin script deslizante -->
 
     <title>Plantemos conciencia</title>
@@ -39,7 +49,7 @@
             </div>
             <div class="col-md-3 offset-md-1 ml-md-auto col barra-contacto text-md-right text-center">
                 <img src="icons/phone.svg" width="25" height="25" alt="">
-                <span>3178433528</span>
+                <span>Llámanos: 3178433528</span>
             </div>
         </div>
     </div>
@@ -96,7 +106,7 @@
     <!-- Fin inicio -->
 
     <!-- Inicio el-proyecto -->
-    <section class="contenedor-proyecto" id="el-proyecto">
+    <section class="contenedor-proyecto mb-3" id="el-proyecto">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -159,6 +169,46 @@
       </div>
     </section>
     <!-- fin el-proyecto -->
+
+    <!-- inicio quienes-somos -->
+    <div class="section mb-4" id="quienes-somos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-none d-md-block contenedor-facebook">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlantemos-conciencia-109003540681986%2F&tabs=timeline&width=450&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="450" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>  
+          </div>
+          <div class="col-md-6">
+            <h1>Quienes somos</h1>
+            <span>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In est sunt sapiente
+              corrupti, sed nesciunt dolore reprehenderit recusandae deserunt quam doloremque
+              possimus sit dignissimos inventore eos rem quaerat eius cumque magnam deleniti
+              corporis eligendi. Neque sed delectus officiis hic saepe quaerat voluptate odit
+              magnam ab accusantium at rerum cumque reprehenderit, ducimus quisquam provident
+              accusamus, voluptatum repellendus facere iure tempore optio recusandae? Pariatur
+              aliquam ullam nemo quos iusto error nihil. Illo quibusdam quos, unde est at adipisci
+              quidem officia impedit magni autem sapiente, nulla voluptatum? Facere quam magnam ducimus
+              reprehenderit voluptatibus voluptatum, corporis officiis tempora praesentium. Ipsa
+              repellat eius libero accusantium, minima assumenda modi sit impedit, veniam excepturi
+              nulla veritatis corrupti id ipsum quod quia deleniti! Qui nostrum mollitia adipisci
+              blanditiis possimus, perspiciatis error soluta dignissimos consequuntur recusandae
+              voluptatem libero sed? Omnis consequuntur temporibus dicta, perferendis voluptates
+              alias nesciunt eos ullam facilis incidunt deserunt delectus veritatis cumque
+              doloribus, fugit repudiandae tenetur accusantium voluptas! Eligendi nam debitis,
+              quas unde eaque sequi assumenda tempora, sapiente nulla voluptas soluta quod
+              aliquam dolor dolorum iste distinctio veritatis labore, aperiam laborum dicta 
+              beatae. Non aliquam, nisi dicta enim, eius quisquam sequi perferendis facere magnam
+              temporibus numquam tempore ea nam ex sunt, quam eligendi assumenda vitae. Ipsum.
+            </span>
+          </div>
+          <div class="col-md-6 d-md-none d-block contenedor-facebook">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlantemos-conciencia-109003540681986%2F&tabs=timeline&width=450&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="450" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin quienes-somos -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

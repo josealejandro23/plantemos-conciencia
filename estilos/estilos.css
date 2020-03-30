@@ -44,13 +44,13 @@
     max-height: 100vh;
 }
 
-.contenedor-carrusel{   /* permite central verticalmente el carrusel */
+.contenedor-carrusel,.contenedor-facebook{   /* permite central verticalmente el carrusel */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .cuerpo-carrusel{  /* otorga un borde al cuerpo del carrusel */
     border: 1px solid gray;
     padding: 1rem;
 }
-
