@@ -104,7 +104,7 @@
     background-attachment: fixed;
 }
 
-.contenedor-footer{
+.contenedor-footer{  /* establece color de fondo al footer */
     padding-top: 2rem;
     padding-bottom: 0;
     border-top: 10px solid rgb(101, 187, 14);
@@ -112,25 +112,22 @@
     color: white;
 }
 
-#btn-facebook{
+#btn-facebook{  /* establece colores al boton de facebook */
     color: white;
     background-color: #007bff;
     border-color: #007bff;
 }
 
-.contenedor-me-gusta{
-    padding-left: 0.9rem;
-}
-
-.me-gusta{
+.me-gusta{  /* centra el contenedor de me gusta, se debe ajustar un margen intrínseco que tiene por defecto */
     display: block;
     margin: auto;
 }
 
-.contenedor-calendario{
-    background: url('../images/calendario-ambiental.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial;
+.contenedor-me-gusta{  /* centra el contenedor de facebook en la columna dado q es un contenedor con un margen intrínseco debe ser corregido con el padding */
+    padding-left: 0.9rem;
+}
+.contenedor-calendario{ /* centra la imágen del calendario en la página */
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
