@@ -51,27 +51,40 @@
 }
 
 .cuerpo-carrusel{  /* otorga un borde al cuerpo del carrusel */
-    border: 1px solid gray;
+    border: 2px solid chartreuse;
     padding: 1rem;
 }
 
-.card{
+.card{  /* agrega borde al cuadro de las fotos */
     border: 2px solid chartreuse;
 }
 
-.card-body{
+.card-body{ /* agrega fondo verde y color blanco al contenedor al pie de las fotos */
     background-color: rgb(101, 187, 14);
     color: white;
 }
 
-.card-par{
+.card-par{  /* establece un color diferente para las fotos intercaladas */
     background-color: rgb(44, 46, 42);
     color: white;
 }
 
-.foto-conocenos{
+.foto-conocenos{  /* establece tamaño para las fotos y las centra */
     height: 300px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+}
+ 
+.contenedor-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.form-control{
+    border: 2px solid chartreuse;
+}
+
+#conocenos{
+    background: url('../images/');
 }
