@@ -55,6 +55,10 @@
     padding: 1rem;
 }
 
+.contenedor-facebook{ /* otorga borde al contenedor de facebook */
+    border: 1px solid chartreuse;
+}
+
 .card{  /* agrega borde al cuadro de las fotos */
     border: 2px solid chartreuse;
 }
@@ -76,15 +80,49 @@
     margin-right: auto;
 }
  
-.contenedor-formulario{
+.contenedor-formulario{  /* Permite centrar el formulario */
     display: flex;
     justify-content: center;
 }
 
-.form-control{
+.form-control{ /* da estilo a los bordes de los contenedores de los formularios y establece el alto de los campos */
     border: 2px solid chartreuse;
+    height: 50px;
 }
 
-#conocenos{
-    background: url('../images/');
+.btn-primary{ /* asigna color al boton enviar, el cambio de color con hover se hace en el archivo bootstrap.css */
+    background-color: rgb(44, 46, 42);
+    border: rgb(44, 46, 42);
+}
+
+#contacto{  /* establece una imágen de fondo fija al área de contacto */
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background: url('../images/imagen-pie.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-footer{
+    padding-top: 2rem;
+    padding-bottom: 0;
+    border-top: 10px solid rgb(101, 187, 14);
+    background-color: rgb(122, 230, 14);
+    color: white;
+}
+
+#btn-facebook{
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.contenedor-me-gusta{
+    padding-left: 0.9rem;
+}
+
+.me-gusta{
+    display: block;
+    margin: auto;
 }

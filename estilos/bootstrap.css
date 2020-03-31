@@ -2562,10 +2562,10 @@ fieldset:disabled a.btn {
   border-color: #007bff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover {  /* se asigna cambio de color al boton enviar al pasar el mouse */
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #f3ac13;
+  border-color: #f3ac13;
 }
 
 .btn-primary:focus, .btn-primary.focus {

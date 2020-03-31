@@ -78,7 +78,7 @@
             <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#conocenos">Conócenos</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#contacto">Contacto</a>
+              <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#contactanos">Contacto</a>
           </li>
           <li class="nav-item">
               <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#">Blog</a>
@@ -152,7 +152,7 @@
                   <img src="images/img-5.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/img-6.jpg" class="d-block w-100" alt="...">
+                  <img src="images/img-8.jpeg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
@@ -244,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-4">
+            <div class="col mb-2">
               <div class="card">
                 <img src="images/gabriela.jpg" class="card-img-top foto-conocenos" alt="...">
                 <div class="card-body card-par">
@@ -253,7 +253,7 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-4">
+            <div class="col mb-2">
               <div class="card">
                 <img src="images/victor.jpg" class="card-img-top foto-conocenos" alt="...">
                 <div class="card-body">
@@ -262,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-4">
+            <div class="col mb-2">
               <div class="card">
                 <img src="images/alejandro.jpg" class="card-img-top foto-conocenos" alt="...">
                 <div class="card-body card-par">
@@ -278,29 +278,75 @@
     <!-- fin conócenos -->
 
     <!-- inicio contacto --> 
-    <div class="section mb-3" id="contacto">
-      <h1 class="text-center">Contáctanos</h1>
+    <div class="section" id="contacto">
+      <h1 id="contactanos" class="text-center mb-5">Contáctanos</h1>
       <div class="container contenedor-formulario">
           <form>
-            <div class="row">
-              <div class="col-12 col-md mb-3">
-                <input type="text" class="form-control" placeholder="Tu nombre" id="nombre">
+            <div class="row mb-3">
+              <div class="col-12 col-md mb-5">
+                <input type="text" class="form-control" style="height: 50px;" placeholder="Tu nombre" id="nombre">
               </div>
-              <div class="col-12 col-md mb-3">
-                <input type="email" class="form-control" placeholder="tu correo" id="correo">
+              <div class="col-12 col-md mb-5">
+                <input type="email" class="form-control" style="height: 50px;" placeholder="tu correo" id="correo">
               </div>
-              <div class="col-12 col-md mb-3">
-                <input type="number" class="form-control" placeholder="Tu teléfono" id="telefono">
+              <div class="col-12 col-md mb-5">
+                <input type="tel" class="form-control" style="height: 50px;" placeholder="Tu teléfono" id="telefono">
               </div>
               <div class="w-100"></div>
               <div class="form-group col">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+                <textarea class="form-control campo-mensaje" id="campo-mensaje" rows="5" placeholder="Mensaje"></textarea>
               </div>
             </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block mb-3 boton-enviar" style="height: 52px;">Enviar</button>
           </form>
       </div>
+      <h2 class="text-center">Llámanos: 3178433528</h2>
     </div>
     <!-- fin contacto -->
+
+    <!-- inicio footer -->
+    <div class="section contenedor-footer">
+      <footer id="footer-main">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-sm-3 text-center text-md-center">
+              <p>Creado por Ing. José Alejandro Vargas</p>
+              <p>Desarrollado por Vargas ingeniería</p>
+            </div>
+  
+            <div class="col-sm-3 d-none d-md-block text-center">
+              <ul class="list-unstyled">
+               <li><a data-scroll href="#inicio">Inicio</a></li>
+               <li><a data-scroll href="#el-proyecto">El poyecto</a></li>
+               <li><a data-scroll href="#quienes-somos">Quienes somos</a></li>
+               <li><a data-scroll href="#conocenos">Conoce nuestro equipo</a></li>
+               <li><a data-scroll href="#contactanos">Contacto</a></li>
+               <li><a href="blog.hmtl">Blog</a></li>
+             </ul>
+            </div>
+  
+            <div class="col-sm-3">
+             <ul class="list-unstyled text-center text-md-center">
+              <li><a id="btn-facebook" class="btn btn-primary" href="https://www.facebook.com/Plantemos-conciencia-109003540681986">Facebook</a></li>
+             </ul>
+             <div class="contenedor-me-gusta">
+              <iframe class="me-gusta" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FPlantemos-conciencia-109003540681986&width=100&layout=box_count&action=like&size=small&share=true&height=65&appId" width="100" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+             </div>
+           </div>
+  
+           <div class="col-sm-3 text-md-left text-center">
+             <h6 class="text-center">Información</h6>
+             <p>Contactanos para podes trabajar juntos y hacer de este mundo un lugar mejor. El equipo de 
+               plantemos conciencia necesita de tus talentos y tu ayuda.
+             </p>
+           </div>
+  
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- fin footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
