@@ -313,20 +313,20 @@
     <div class="section" id="contacto">
       <h1 id="contactanos" class="text-center mb-5">Contáctanos</h1>
       <div class="container contenedor-formulario">
-          <form>
+          <form id="formulario" name="formulario" action="">
             <div class="row mb-3">
               <div class="col-12 col-md mb-5">
-                <input type="text" class="form-control" style="height: 50px;" placeholder="Tu nombre" id="nombre">
+                <input type="text" class="form-control" style="height: 50px;" id="nombre" required pattern="[a-zA-ZáéíóúáéíóúñÑ ]{2,50}" placeholder="Tu nombre y apellido" title="El campo debe contener entre 2 y 30 caracteres. Se admiten únicamente letras">
               </div>
               <div class="col-12 col-md mb-5">
-                <input type="email" class="form-control" style="height: 50px;" placeholder="tu correo" id="correo">
+                <input type="email" class="form-control" style="height: 50px;" placeholder="tu correo" id="correo" required autocomplete="off">
               </div>
               <div class="col-12 col-md mb-5">
-                <input type="tel" class="form-control" style="height: 50px;" placeholder="Tu teléfono" id="telefono">
+                <input type="tel" class="form-control" style="height: 50px;" placeholder="Tu teléfono celular" id="telefono" required pattern="[0-9]{10}" title="Ingresa un número de celular">
               </div>
               <div class="w-100"></div>
               <div class="form-group col">
-                <textarea class="form-control campo-mensaje" id="campo-mensaje" rows="5" placeholder="Mensaje"></textarea>
+                <textarea class="form-control campo-mensaje" id="campo-mensaje" rows="5" placeholder="Mensaje" required pattern="{10,300}"></textarea>
               </div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block mb-3 boton-enviar" style="height: 52px;">Enviar</button>
@@ -336,7 +336,7 @@
     </div>
     <!-- fin contacto -->
 
-    <!-- inicio footer -->
+    <!-- inicio footer --> 
     <div class="section contenedor-footer">
       <footer id="footer-main">
         <div class="container">
