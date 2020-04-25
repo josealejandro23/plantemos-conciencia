@@ -1,7 +1,7 @@
 @media (min-width:576px) and (max-width:767px){  /* Permite mostrar la barra flotante de redes en tamaño especial para pantallas sm*/
 	.redes{
         position: fixed;
-        top: 80px;
+        top: 120px;
         left: 0;
         z-index: 10;
         zoom: 70%
