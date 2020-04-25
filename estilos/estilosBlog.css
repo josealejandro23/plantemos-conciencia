@@ -57,10 +57,6 @@
 }
 
 @media (max-width:991px){ /* Ajuste para resoluciones xs, sm y md */
-    .titulo-jumbotron{ /* Cambio de tamaño del título de jumbotron*/
-        font-size: 2.5rem;
-    }
-    
     .contenedor-izquiero, .contenedor-derecho{  /* Elimina márgenes para poder centrar las tarjetas */
         margin-right: 0rem;
         margin-left: 0rem;

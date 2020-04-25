@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap'); /* Fuente Playfair display */
 
-@media(max-width:767px){ /* Tamaño titulo desde xs hasta sm */
+@media(max-width:991px){ /* Tamaño titulo desde xs hasta md */
     .titulo-jumbotron{
         font-family: 'playfair display', serif;
         color: #ffffff;
