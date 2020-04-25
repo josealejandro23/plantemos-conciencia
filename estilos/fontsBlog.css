@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap'); /* Fuente Playfair display */
+
+@media(max-width:767px){ /* Tamaño titulo desde xs hasta sm */
+    .titulo-jumbotron{
+        font-family: 'playfair display', serif;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+}
+
+.titulo-inicial{  /* tamaño de título desde md */
+    font-family: 'playfair display', serif;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    color: #343a40;
+}
+
+.titulo-inicial:hover{  /* Cambio de color para el título inicial al hacer hover */
+    color: black;
+}
+
+.navbar-brand{  /* Color de titulo de navbar "Plantemos conciencia" */
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.navbar-brand:hover{ /* Cambio de color para el título del navbar al hacer hover */
+    color: black;
+}
+
+.titulo-jumbotron{  /* Fuente para el jumbotron */
+    font-family: 'playfair display', serif;
+    color: #ffffff;
+}
+
+.texto-jumbotron{ /* Fuente para el texto del jumbotron */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-main{  /* Fuente para el título para el main del blog */
+    font-size: 1.8rem;
+    font-family: 'playfair display', serif;
+}
+
+.blog-post-title{  /* Fuente para los títulos de las entradas */
+    font-size: 2.5rem;
+    font-family: 'playfair display', serif;
+    font-weight: bold;
+    color: black;
+}
+
+p{ /* Fuente para los elementos p */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-sidebar, .titulo-tarjeta{ /* Fuente para los títulos de las tarjetas */
+    font-family: 'playfair display', serif;
+    font-style: italic;
+}
+

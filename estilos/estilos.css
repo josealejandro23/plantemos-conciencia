@@ -126,8 +126,15 @@
 .contenedor-me-gusta{  /* centra el contenedor de facebook en la columna dado q es un contenedor con un margen intrínseco debe ser corregido con el padding */
     padding-left: 0.9rem;
 }
+
 .contenedor-calendario{ /* centra la imágen del calendario en la página */
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
+}
+
+@media(min-width:576px) and (max-width:767px){  /* Se oculta la barra para de teléfono para una resolución sm pues ocupa mucho espacio */
+    .container-barra{
+        display: none;
+    }
 }

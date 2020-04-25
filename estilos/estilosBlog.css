@@ -1,0 +1,102 @@
+@media (min-width:768px){  /*Permite el efecto de agrandamiento de menú desde pantallas md hacia arriba*/
+    .contenedor-navbar{  /* Espacia los elementos del navbar de forma equidistante */
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar{  /* Fija el tamaño del navbar para evitar su agrandamiento al hacer hover sobre sus elementos */
+        min-height: 40px;
+        max-height: 56px;
+    }
+    
+    .nav-link{ /* Establece la fuente para los elementos del navbar */
+        position: absolute; /* Para poder ubicar la barra en el sitio adecuado */
+        padding-top: 0.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #6c757d;
+        font-size: 1.2rem;
+    }
+    
+    .nav-link:hover{ /* Efecto al hacer hover a los elemenots del navbar */
+        font-size: 2rem;
+        transition: 0.2s ease-in-out;
+        color: black;
+        font-weight: bold;
+    }
+
+    .contenedor-izquiero{ /* Margen para separar una tarjeta de otra */
+        margin-right: 0.2rem;
+    }
+    
+    .contenedor-derecho{ /* Margen para separar una tarjeta de otra */
+        margin-left: 0.2rem;
+    }
+}
+
+@media (max-width:767px){
+    .navbar{ /* Color de navbar para resoluciones xs a sm */
+        background-color: #E5E5E5;
+        margin-bottom: 1rem;
+    }
+    .nav-link{ /* Color de elementos del navbar */
+        color: black;
+        font-size: 1.3rem;
+        text-align: end;
+    }
+    .logo-navbar{ /* Oculta el logo en el navbar para resoluciones hasta sm */
+        display: none;
+        margin-left: auto;
+    }
+}
+
+.jumbotron{ /* Ajusta el jumbotron y sus márgenes */
+    padding-top: 2rem;
+    background-color: #343a40;
+    max-height: 360px;
+    border-radius: 0.5rem;
+}
+
+@media (max-width:991px){ /* Ajuste para resoluciones xs, sm y md */
+    .titulo-jumbotron{ /* Cambio de tamaño del título de jumbotron*/
+        font-size: 2.5rem;
+    }
+    
+    .contenedor-izquiero, .contenedor-derecho{  /* Elimina márgenes para poder centrar las tarjetas */
+        margin-right: 0rem;
+        margin-left: 0rem;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contenedor-tarjeta{ /* Elimina márgenes para poder centrar las tarjetas */
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.contenedor-izquiero, .contenedor-derecho{ /* ajuste de contenedores de tarjetas */
+    border: 1px solid #DEE2E6;
+    border-radius: 0.5rem;
+    max-height: 250px;
+}
+
+.img-tarjeta{ /* permite redondear las esquinas de las imágenes de las tarjetas */
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.sobre-nosotros{ /* color de fondo de texto sobre nosotros */
+    background-color: #F8F9FA;
+}
+
+.enlace-entrada:hover{ /* Efecto al hacer hover sobre enlaces del sidebar */
+    color: green;
+    font-weight: 500;
+}
+
+.enlace-contacto:hover{ /* Efecto al hacer hover sobre enlaces del sidebar */
+    color: darkblue;
+    font-weight: 500;
+}
+

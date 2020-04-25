@@ -44,7 +44,7 @@
 <!--     <div class="loader"></div> Encargada de la imagen de carga de la página -->
     
     <!-- inicio Barra lateral redes sociales -->
-    <div class="redes d-md-block d-none">
+    <div class="redes d-sm-block d-none">
       <a target="none" href="https://www.facebook.com/Plantemos-conciencia-109003540681986"><div id="facebook"><img src="icons/facebook-icon.png" style="width: 25px; height: 25px;" alt=""></div></a>
       <a target="none" href="https://api.whatsapp.com/send?phone=573178433528&text=Hola,%20bienvenido%20al%20chat%20con%20Plantemos%20conciencia."><div id="whatsapp"><img src="icons/whatsapp.png" style="width: 25px; height: 25px;" alt=""></div></a>
       <a target="none" href="https://twitter.com/intent/tweet?text=https%3A//www.fb.com/Plantemos-conciencia-109003540681986"><div id="twitter"><img src="icons/twitter-icon.png" style="width: 25px; height: 25px;" alt=""></div></a>
@@ -53,7 +53,7 @@
     <!-- fin Barra lateral redes sociales-->
 
     <!--Inicio botón whatsapp -->
-    <div class="d-none d-md-block contenedor-whatsapp">
+    <div class="d-none d-sm-block contenedor-whatsapp">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <a href="https://api.whatsapp.com/send?phone=573178433528&text=Hola,%20bienvenido%20al%20chat%20con%20Plantemos%20conciencia." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
@@ -65,7 +65,7 @@
 
     <div class="section fixed-top">
       <!-- Inicio Barra datos -->
-      <div class="section" style="background-color: rgb(122, 230, 14);">
+      <div class="section d-block d-sm-none d-md-block" style="background-color: rgb(122, 230, 14);">
         <div class="container barra" style="height: 4rem;">
           <div class="row">
               <div class="col-md-auto text-md-left text-center barra-mail">
@@ -106,7 +106,7 @@
                 <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#contactanos">Contacto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="#">Blog</a>
+                <a class="nav-link mr-md-1 mr-lg-4 text-white" data-scroll href="blog.html">Blog</a>
             </li>
           </ul>
         </div>
@@ -313,20 +313,20 @@
     <div class="section" id="contacto">
       <h1 id="contactanos" class="text-center mb-5">Contáctanos</h1>
       <div class="container contenedor-formulario">
-          <form id="formulario" name="formulario" action="">
+          <form id="formulario" name="formulario" action="sendMail.php" method="POST" enctype="text/plain">
             <div class="row mb-3">
               <div class="col-12 col-md mb-5">
-                <input type="text" class="form-control" style="height: 50px;" id="nombre" required pattern="[a-zA-ZáéíóúáéíóúñÑ ]{2,50}" placeholder="Tu nombre y apellido" title="El campo debe contener entre 2 y 30 caracteres. Se admiten únicamente letras">
+                <input type="text" class="form-control" name="nombre" style="height: 50px;" id="nombre" required pattern="[a-zA-ZáéíóúáéíóúñÑ ]{2,50}" placeholder="Tu nombre y apellido" title="El campo debe contener entre 2 y 30 caracteres. Se admiten únicamente letras">
               </div>
               <div class="col-12 col-md mb-5">
-                <input type="email" class="form-control" style="height: 50px;" placeholder="tu correo" id="correo" required autocomplete="off">
+                <input type="email" class="form-control" name="correo" style="height: 50px;" placeholder="tu correo" id="correo" required autocomplete="off">
               </div>
               <div class="col-12 col-md mb-5">
-                <input type="tel" class="form-control" style="height: 50px;" placeholder="Tu teléfono celular" id="telefono" required pattern="[0-9]{10}" title="Ingresa un número de celular">
+                <input type="tel" class="form-control" name="telefono" style="height: 50px;" placeholder="Tu teléfono celular" id="telefono" required pattern="[0-9]{10}" title="Ingresa un número de celular">
               </div>
               <div class="w-100"></div>
               <div class="form-group col">
-                <textarea class="form-control campo-mensaje" id="campo-mensaje" rows="5" placeholder="Mensaje" required pattern="{10,300}"></textarea>
+                <textarea class="form-control campo-mensaje" name="mensaje" id="mensaje" rows="5" placeholder="Mensaje" required pattern="{10,300}"></textarea>
               </div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block mb-3 boton-enviar" style="height: 52px;">Enviar</button>
@@ -353,7 +353,7 @@
              </ul>
             </div>
   
-            <div class="col-sm-3">
+            <div class="col-md-3">
              <ul class="list-unstyled text-center text-md-center">
               <li><a id="btn-facebook" class="btn btn-primary" href="https://www.facebook.com/Plantemos-conciencia-109003540681986" target="none">Facebook</a></li>
              </ul>
@@ -362,7 +362,7 @@
              </div>
            </div>
   
-           <div class="col-sm-3 text-md-left text-center mt-2 mt-md-0">
+           <div class="col-md-3 text-md-left text-center mt-2 mt-md-0">
              <h6 class="text-center">Información</h6>
              <p>Contactanos para podes trabajar juntos y hacer de este mundo un lugar mejor. El equipo de 
                plantemos conciencia necesita de tus talentos y tu ayuda.
@@ -374,7 +374,7 @@
     </div>
     <!-- Fin footer -->
     <!-- Inicio barra de diseño -->
-    <div class="col-12 text-center" style="background-color: rgb(31, 32, 29)">
+    <div class="col-12 text-center py-3" style="background-color: rgb(31, 32, 29)">
       <a class=" text-white" href="https://www.facebook.com/alejovargas23" target="none">Desarrollado por Vargas ingeniería <br></a>
       <span class="text-white">Todos los derechos reservados. <br>Copyright 2020</span>
     </div>

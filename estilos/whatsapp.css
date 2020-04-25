@@ -1,16 +1,36 @@
-.float{
-	position:fixed;
-	width:300px;
-	height:65px;
-	bottom:20px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  	font-size:20px;
-	box-shadow: 2px 2px 3px #999;
-	z-index:100;  
+@media (min-width:576px) and (max-width:767px){ /* Permite visualizar el botón flotante de whatsapp para resoluciones sm a md con un tamaño especial */
+	.float{
+		position:fixed;
+		width:300px;
+		height:65px;
+		bottom:20px;
+		right:40px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:20px;
+		box-shadow: 2px 2px 3px #999;
+		z-index:100;
+		zoom: 80%  
+	}
+}
+
+@media (min-width:678px){  /* Permite visualizar el botón de whatsapp en tamaño normal desde resoluciones md */
+	.float{
+		position:fixed;
+		width:300px;
+		height:65px;
+		bottom:20px;
+		right:40px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:20px;
+		box-shadow: 2px 2px 3px #999;
+		z-index:100;  
+	}
 }
 
 .float:hover{
